@@ -1,3 +1,7 @@
+USE grados;
+
+
+
 SET FOREIGN_KEY_CHECKS = 0;
 DROP TABLE IF EXISTS people;
 DROP TABLE IF EXISTS professors;
@@ -19,3 +23,5 @@ CREATE TABLE professors (
     PRIMARY KEY (professor_id),
     FOREIGN KEY (professor_id) REFERENCES people(person_id)
 );
+
+
