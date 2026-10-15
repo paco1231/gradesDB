@@ -4,9 +4,9 @@
 -- Descripción: Script para crear la BD de Grados
 --
 
-DROP DATABASE IF EXISTS GradesDB;
-CREATE DATABASE GradesDB;
-USE GradesDB;
+DROP DATABASE IF EXISTS grados;
+CREATE DATABASE grados;
+USE grados;
 
 -- ============================================================================
 -- Eliminamos tablas previas siguiendo el orden inverso de dependencias
@@ -217,3 +217,7 @@ ALTER TABLE groups
 -- ============================================================================
 -- Las funciones y los triggers de las reglas de negocio se definen,
 -- respectivamente, en functions.sql y triggers.sql.
+git add queries.sql
+git commit -m "Añadidas consultas básicas (SELECT, WHERE, funciones agregadas)"
+git commit -m "Añadidas consultas con JOIN y GROUP BY"
+git commit -m "Añadidas vistas y consultas complejas"

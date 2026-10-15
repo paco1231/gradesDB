@@ -3,7 +3,7 @@
 -- Fecha: Noviembre 2024
 -- Descripción: Procedimiento para poblar la BD de Grados
 --
-USE GradesDB;
+USE grados;
 
 DELIMITER //
 CREATE OR REPLACE PROCEDURE p_populate()
