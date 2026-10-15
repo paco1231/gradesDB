@@ -1,3 +1,9 @@
+--
+-- Autor: David Ruiz
+-- Fecha: Noviembre de 2024
+-- Descripción: Script para crear la BD de Grados
+--
+
 DROP DATABASE IF EXISTS GradesDB;
 CREATE DATABASE GradesDB;
 USE GradesDB;
@@ -202,16 +208,12 @@ ALTER TABLE subjects
 ALTER TABLE groups
     ADD CONSTRAINT rn_uq_groups_name UNIQUE (subject_id, group_name, academic_year);
 
+-- ============================================================================
+-- RNF001 se implementa en la aplicación mediante Silence y, para acceso SQL directo,
+-- mediante los usuarios y roles definidos en grants.sql. Las credenciales de Silence se almacenan en su base
+-- interna y no forman parte del esquema académico GradesDB.
 
 
-
-
-
-
-
-    
-    
-    
-
-
-
+-- ============================================================================
+-- Las funciones y los triggers de las reglas de negocio se definen,
+-- respectivamente, en functions.sql y triggers.sql.
